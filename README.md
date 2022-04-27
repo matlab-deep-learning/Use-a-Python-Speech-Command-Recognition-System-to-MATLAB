@@ -1,4 +1,4 @@
-# Use a Python Speech Command Recognition System to MATLAB
+# Use a Python Speech Command Recognition System in MATLAB
 
 ## This example shows how to:
 - Execute a pretrained Python speech command recognition system in MATLAB.
