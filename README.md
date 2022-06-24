@@ -65,7 +65,7 @@ You go through both approaches in the next sections.
 
 ## Running The Python Speech Command Recognition System in MATLAB
 
-You can execute Python scripts and commands from MATLAB. For more information about this functionality, see [Call Python from MATLAB](https://www.mathworks.com/help/matlab/call-python-libraries.html) in the documentation. In this example, you use [pyrunfile](https://www.mathworks.com/help/matlab/ref/pyrunfile.html) to run a Python script in MATLAB. The Python script performs command recognition using the pretrained network. pyrunfile allows you access and use variables from the Python script in MATLAB.
+You can execute Python scripts and commands from MATLAB. For more information about this functionality, see [Call Python from MATLAB](https://www.mathworks.com/help/matlab/call-python-libraries.html) in the documentation. In this example, you use [pyrunfile](https://www.mathworks.com/help/matlab/ref/pyrunfile.html) to run a Python script in MATLAB. The Python script performs command recognition using the pretrained network. pyrunfile allows you to access and use variables from the Python script in MATLAB.
 
 Use pyrunfile to call the Python inference script [InferSpeechCommands.py](PythonCode/InferSpeechCommands.py). Pass the name of the test audio file as an input argument. Return variables computed in the Python script to MATLAB by specifying them as output arguments. In the code snipped below, you return the following:
 - The mel spectrogram (computed by Librosa).
@@ -82,7 +82,7 @@ Recall that the system is comprised of two components (feature extraction and ne
 
 ### Converting the Network to MATLAB
 
-You first import the PyTorch pretrained network to MATLAB using MATLAB's [model import-export functionality](https://www.mathworks.com/help/deeplearning/deep-learning-import-and-export.html?s_tid=CRUX_lftnav). In this example, you use [importONNXNetwork](https://www.mathworks.com/help/deeplearning/ref/importonnxnetwork.html). The function imports a version of the network that was saved to the Open Neural Network Exchange (ONNX) format. To see how the PytTorch model can be saved to an ONNX format, refer to [convertModelToONNX.py](PythonCode/convertModelToONNX.py).
+You first import the PyTorch pretrained network to MATLAB using MATLAB's [model import-export functionality](https://www.mathworks.com/help/deeplearning/deep-learning-import-and-export.html?s_tid=CRUX_lftnav). In this example, you use [importONNXNetwork](https://www.mathworks.com/help/deeplearning/ref/importonnxnetwork.html). The function imports a version of the network that was saved to the Open Neural Network Exchange (ONNX) format. To see how the PyTorch model can be saved to an ONNX format, refer to [convertModelToONNX.py](PythonCode/convertModelToONNX.py).
 
 ![aiaudio image](images/networkimport.PNG)
 
@@ -104,7 +104,7 @@ Matching MATLAB and Librosa feature extraction by setting parameter-value pairs 
 
 Simplify the process by using the helper function [librosaToAudioToolbox](HelperFiles/librosaToAudioToolbox.m). This function takes the parameter-value pair arguments used in Librosa's mel spectrogram function, and automatically maps them to an equivalent audioFeatureExtractor object.
 
-The function returns code that you can use to compute the auditory spectrgrams.
+The function returns code that you can use to compute the auditory spectrograms.
 
 ![aiaudio image](images/afe.PNG)
 
