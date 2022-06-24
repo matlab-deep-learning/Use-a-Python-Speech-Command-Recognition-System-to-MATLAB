@@ -106,7 +106,7 @@ Simplify the process by using the helper function [librosaToAudioToolbox](Helper
 
 The function returns code that you can use to compute the auditory spectrograms.
 
-![aiaudio image](images/afe.PNG)
+![aiaudio image](images/afe2.PNG)
 
 The code produces an identical mel spectrogram as Librosa for the same input signal, as shown below.
 
