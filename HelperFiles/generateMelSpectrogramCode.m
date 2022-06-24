@@ -59,7 +59,7 @@ code = sprintf('%s\nsetExtractorParameters(afe,"melSpectrum",SpectrumType="power
 code = sprintf('%s                         FilterBankDesignDomain="linear",...\n',code);
 code = sprintf('%s                         FilterBankNormalization="%s",...\n',code,norm);
 code = sprintf('%s                         WindowNormalization=false,...\n',code);
-code = sprintf('%s                         NumBands=%d,...);\n',code,n_mels);
+code = sprintf('%s                         NumBands=%d,...\n',code,n_mels);
 code = sprintf('%s                         FrequencyRange=[%f %f]);\n',code,fmin,fmax);
 
 if strcmp(type,'object')
