@@ -116,7 +116,7 @@ The code produces an identical mel spectrogram as Librosa for the same input sig
 
 You now have MATLAB versions of the pretrained convolutional network and the feature extraction. You can perform speech command recognition entirely in MATLAB, with no Python dependencies:
 
-![aiaudio image](images/MLSystem.PNG)
+![aiaudio image](images/MLSystem2.PNG)
 
 ## Speech Command Recognition in Simulink
 
